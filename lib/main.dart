@@ -38,10 +38,50 @@ class MyApp extends StatelessWidget {
                 letterSpacing: 2.5,
                 fontWeight: FontWeight.bold,
               ),
-            )
+            ),
+            const Card(
+              color: Colors.white,
+              // padding: const EdgeInsets.all(10.0),
+              margin:
+                  EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
+              child: ListTile(leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    "+92 12345678 90",
+                    style: TextStyle(
+                      fontFamily: 'Sans Pro',
+                      fontSize: 22.0,
+                    ),
+                  ) ,
+                  )
+            ),
+            const Card(
+              color: Colors.white,
+              // padding: const EdgeInsets.all(10.0),
+              margin:
+                  EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
+              child: ListTile(leading: Icon(
+                    Icons.mail,
+                    color: Colors.teal,
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    "Maryabaloch7@gmail.com",
+                    style: TextStyle(
+                      fontFamily: 'Sans Pro',
+                      fontSize: 22.0,
+                    ),
+                  ) ,
+                  )
+            ),
           ],
         )),
       ),
     );
   }
 }
+
+
