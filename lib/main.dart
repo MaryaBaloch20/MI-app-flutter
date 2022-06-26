@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const CircleAvatar(
               radius: 70.0,
@@ -39,13 +40,17 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 10.0, width: 150.0, child: Divider(color: Colors.teal.shade100),),
+            SizedBox(
+              height: 10.0,
+              width: 150.0,
+              child: Divider(color: Colors.teal.shade100),
+            ),
             const Card(
-              color: Colors.white,
-              // padding: const EdgeInsets.all(10.0),
-              margin:
-                  EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
-              child: ListTile(leading: Icon(
+                color: Colors.white,
+                // padding: const EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
+                child: ListTile(
+                  leading: Icon(
                     Icons.phone,
                     color: Colors.teal,
                     size: 30.0,
@@ -56,15 +61,14 @@ class MyApp extends StatelessWidget {
                       fontFamily: 'Sans Pro',
                       fontSize: 22.0,
                     ),
-                  ) ,
-                  )
-            ),
+                  ),
+                )),
             const Card(
-              color: Colors.white,
-              // padding: const EdgeInsets.all(10.0),
-              margin:
-                  EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
-              child: ListTile(leading: Icon(
+                color: Colors.white,
+                // padding: const EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
+                child: ListTile(
+                  leading: Icon(
                     Icons.mail,
                     color: Colors.teal,
                     size: 30.0,
@@ -75,14 +79,11 @@ class MyApp extends StatelessWidget {
                       fontFamily: 'Sans Pro',
                       fontSize: 22.0,
                     ),
-                  ) ,
-                  )
-            ),
+                  ),
+                )),
           ],
         )),
       ),
     );
   }
 }
-
-
