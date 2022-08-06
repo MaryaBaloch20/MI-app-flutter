@@ -2,6 +2,6 @@
 
 A simple beginners app for managing your personal information.
 
-# Language: Flutter
-# Path: lib/main.dart
-![](images/Screenshot_1659768724.png)
+### Language: Flutter
+### Path: lib/main.dart
+![](images/Screenshot_1659768724.png | width=250, height=500)
