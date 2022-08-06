@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.purple[200],
         body: SafeArea(
             child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
               'FLUTTER DEVELOPER',
               style: TextStyle(
                 fontFamily: 'Sans Pro',
-                color: Colors.teal.shade100,
+                color: Colors.purple[600],
                 fontSize: 18.0,
                 letterSpacing: 2.5,
                 fontWeight: FontWeight.bold,
@@ -45,17 +45,18 @@ class MyApp extends StatelessWidget {
               width: 150.0,
               child: Divider(color: Colors.teal.shade100),
             ),
-            const Card(
+            Card(
                 color: Colors.white,
                 // padding: const EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 30.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
-                    color: Colors.teal,
+                    color: Colors.purple[200],
                     size: 30.0,
                   ),
-                  title: Text(
+                  title: const Text(
                     "+92 12345678 90",
                     style: TextStyle(
                       fontFamily: 'Sans Pro',
@@ -63,17 +64,18 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 )),
-            const Card(
+            Card(
                 color: Colors.white,
                 // padding: const EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 30.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.mail,
-                    color: Colors.teal,
+                    color: Colors.purple[200],
                     size: 30.0,
                   ),
-                  title: Text(
+                  title: const Text(
                     "Maryabaloch7@gmail.com",
                     style: TextStyle(
                       fontFamily: 'Sans Pro',
